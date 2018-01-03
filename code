@@ -1,35 +1,61 @@
 
 #include <iostream>
+#include <unistd.h>
 
 using namespace std;
 
 string user_name;
-
-int user_difficulty;
+char u_president;
+char u_ceogoogle;
 
 int main(int argc, const char * argv[]) {
    
-    cout << "Hello there! What's your name?" << endl;
-    getline(cin, user_name);
+    cout << "Hello there! What's your name?  ";
+    cin >> user_name;
     cout << endl;
-    cout << "So " << user_name << " what would you like your difficulty to be? 1 / 2 / 3" << endl;
-    cin >> user_difficulty;
-    if(user_difficulty == '1') {
-        
-        //Here come the difficulty 1 questions
-        
-    }
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << "These are the Game Rules" << endl;
+    sleep(2.32);
+    cout << endl;
+    cout << "1. Only enter 1 word!" << endl;
+    sleep(2.72);
+    cout << endl;
+    cout << "2. Be Honest!" << endl;
+    sleep(2.72);
+    cout << endl;
+    cout << endl;
+    // __________________________________________________________________________
     
-    else if(user_difficulty == '2') {
-        
-        //Here come the difficulty 2 questions
-        
-    }
     
-    else if(user_difficulty == '3') {
-        
-        //Here come the difficulty 3 questions
-        
+    cout << endl;
+    cout << "Question 1... ";
+    sleep(1);
+    cout << "Who was the 45th President? A(Pres. Trump) B(Pres. Obama) C(Pres. Clinton) D(Pres. Bush)" << endl;
+    cin >> u_president;
+    cout << endl;
+    if(u_president == 'A') {
+        cout << "Correct" << endl;
+    } else {
+        cout << "False!" << endl;
     }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 2... ";
+    sleep(1);
+    cout << "Who is the Chief Executive Officer of Google? A(Bill Gates) B(Sundar Pichai) C(Ruth Porat) D(Gary Briggs)" << endl;
+    cin >> u_ceogoogle;
+    cout << endl;
+    if(u_ceogoogle == 'B') {
+        cout << "Correct" << endl;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
     return 0;
 }
