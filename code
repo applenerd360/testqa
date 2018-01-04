@@ -20,6 +20,25 @@ int score;
 
 int main(int argc, const char * argv[]) {
    
+    cout << "L";
+    sleep(1);
+    cout << "O";
+    sleep(1);
+    cout << "A";
+    sleep(1);
+    cout << "D";
+    sleep(1);
+    cout << "I";
+    sleep(1);
+    cout << "N";
+    sleep(1);
+    cout << "G";
+    sleep(1);
+    cout << "                 100% Initializing!" << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    sleep(1);
     cout << "Hello there! What's your name?  ";
     cin >> user_name;
     cout << endl;
@@ -163,8 +182,8 @@ int main(int argc, const char * argv[]) {
     
     cout << "Score :  " << score << " !";
     cout << endl;
-    if (score > 5) {
-        cout << "Well Done!" << endl;
+    if (score == 8) {
+        cout << "Well Done! You answered every question correct!" << endl;
     } else {
         cout << endl;
         cout << "You didn't get enough points!" << endl;
