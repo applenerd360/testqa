@@ -1,12 +1,16 @@
 
 #include <iostream>
 #include <unistd.h>
+#include <fstream>
 
 using namespace std;
 
 string user_name;
 char u_president;
 char u_ceogoogle;
+
+char try_again;
+int score;
 
 int main(int argc, const char * argv[]) {
    
@@ -19,13 +23,15 @@ int main(int argc, const char * argv[]) {
     cout << "These are the Game Rules" << endl;
     sleep(2.32);
     cout << endl;
-    cout << "1. Only enter 1 word!" << endl;
-    sleep(2.72);
+    cout << "1. To answer questions, enter it in a Capital Letter" << endl;
+    sleep(3.19863859111133435154315453113531156186781);
     cout << endl;
     cout << "2. Be Honest!" << endl;
     sleep(2.72);
     cout << endl;
     cout << endl;
+   
+    
     // __________________________________________________________________________
     
     
@@ -37,6 +43,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(u_president == 'A') {
         cout << "Correct" << endl;
+        score += 1 ;
     } else {
         cout << "False!" << endl;
     }
@@ -51,11 +58,19 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(u_ceogoogle == 'B') {
         cout << "Correct" << endl;
+        score += 1 ;
     } else {
         cout << "False!" << endl;
     }
     cout << endl;
     
     
+    cout << "Score :  " << score << " !";
+    cout << endl;
+    if (score > 5) {
+        cout << "Well Done!" << endl;
+    } else {
+        cout << "You didn't get enough points!" << endl;
+    }
     return 0;
 }
