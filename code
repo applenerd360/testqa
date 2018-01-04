@@ -8,6 +8,12 @@ using namespace std;
 string user_name;
 char u_president;
 char u_ceogoogle;
+char superhero;
+char us_holiday;
+char gordon_ramsay;
+char tropical_storm;
+char largest_prime_number;
+char display_lcd;
 
 char try_again;
 int score;
@@ -65,11 +71,102 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     
     
+    cout << endl;
+    cout << "Question 3... ";
+    sleep(1);
+    cout << "Superman is a fictional superhero from a fictional planet, which one? A(Pluto) B(Mars) C(Krypton) D(Kepler)" << endl;
+    cin >> superhero;
+    cout << endl;
+    if(superhero == 'C') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 4... ";
+    sleep(1);
+    cout << "Which US holiday is celebrated on October 12th? A(Columbus Day) B(Thanksgiving) C(Christmas) D(Easter)" << endl;
+    cin >> us_holiday;
+    cout << endl;
+    if(us_holiday == 'A') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 5... ";
+    sleep(1);
+    cout << "Celebrity chef Gordon Ramsay open his first restaurant in what city? A(Paris, France) B(London, England) C(Rome, Italy) D(Madrid, Spain)" << endl;
+    cin >> gordon_ramsay;
+    cout << endl;
+    if(gordon_ramsay == 'B') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 6... ";
+    sleep(1);
+    cout << "At what speed does a tropical storm become a hurricane? A(119km/h) B(221km/h) C(118km/h) D(23.4mp/h)" << endl;
+    cin >> tropical_storm;
+    cout << endl;
+    if(tropical_storm == 'A') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 7... ";
+    sleep(1);
+    cout << "What is the largest 3-digit prime number? A(997) B(995) C(999) D(993)" << endl;
+    cin >> largest_prime_number;
+    cout << endl;
+    if(largest_prime_number == 'A') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << "Question 8... ";
+    sleep(1);
+    cout << "When refering to a computer monitor what doe the acronym LCD stand for? A(Liquid Crystal Display) B(Loud Computerised Display) C(Little Computerised Display) D(Liquid Crystal Display)" << endl;
+    cin >> display_lcd;
+    cout << endl;
+    if(display_lcd == 'D' or 'A') {
+        cout << "Correct" << endl;
+        score += 1 ;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    
     cout << "Score :  " << score << " !";
     cout << endl;
     if (score > 5) {
         cout << "Well Done!" << endl;
     } else {
+        cout << endl;
         cout << "You didn't get enough points!" << endl;
     }
     return 0;
