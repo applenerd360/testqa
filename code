@@ -20,7 +20,7 @@ int score;
 
 int main(int argc, const char * argv[]) {
    
-    cout << "L";
+    cout << "L"; //This is a very convincing loading screen...
     sleep(1);
     cout << "O";
     sleep(1);
@@ -68,7 +68,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(u_president == 'A') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -83,7 +83,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(u_ceogoogle == 'B') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -98,7 +98,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(superhero == 'C') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -113,7 +113,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(us_holiday == 'A') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -128,7 +128,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(gordon_ramsay == 'B') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -143,12 +143,25 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(tropical_storm == 'A') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
     cout << endl;
     
+    cout << endl;
+    cout << "Question 1... ";
+    sleep(1);
+    cout << "What happened when the great depression ended? (A. WWII started, B. Rockefeller's oil empire split,  C. WWI ended, D. Trump's presidency ended)" << endl;
+    cin >> u_president;
+    cout << endl;
+    if(u_president == 'A') {
+        cout << "Correct" << endl;
+        score++;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
     
     cout << endl;
     cout << "Question 7... ";
@@ -158,7 +171,7 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(largest_prime_number == 'A') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
     } else {
         cout << "False!" << endl;
     }
@@ -173,7 +186,21 @@ int main(int argc, const char * argv[]) {
     cout << endl;
     if(display_lcd == 'D' or 'A') {
         cout << "Correct" << endl;
-        score += 1 ;
+        score++;
+    } else {
+        cout << "False!" << endl;
+    }
+    cout << endl;
+    
+    cout << endl;
+    cout << "Question 1... ";
+    sleep(1);
+    cout << "Which political party was JFK associated with? (A. Republican, B. Democrat, C. Libertarian Party, D. He wasn't in any part" << endl;
+    cin >> u_president;
+    cout << endl;
+    if(u_president == 'A') {
+        cout << "Correct" << endl;
+        score++;
     } else {
         cout << "False!" << endl;
     }
